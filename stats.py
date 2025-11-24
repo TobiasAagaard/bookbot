@@ -7,3 +7,4 @@ def get_book_text(filepath):
 def total_num_words(filecontent):
     words = filecontent.split()
     return len(words)
+
