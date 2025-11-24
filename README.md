@@ -19,7 +19,7 @@ git clone https://github.com/TobiasAagaard/bookbot.git
 cd bookbot
 ```
 
-2. Create and activate a virtual environment:
+2. Create and activate a virtual environment (optional):
 ```bash
 python3 -m venv venv
 source venv/bin/activate  # On Mac/Linux
