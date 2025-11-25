@@ -1,12 +1,10 @@
-
 from .stats import total_num_words, count_unique_characters, sort_characters_dictonary
 from .file_reader import get_book_text
 import sys
 
-
 def main():
     if len(sys.argv) != 2:
-        print("Usage: python3 main.py <path_to_book>")
+        print("Usage: bookbot <path_to_book>")
         sys.exit(1)
 
     text = get_book_text(sys.argv[1])
@@ -15,7 +13,7 @@ def main():
     sorted_chars = sort_characters_dictonary(char_count)
 
     print("============ BOOKBOT ============")
-    print (f"Analyzing book found at {sys.argv[1]}")
+    print(f"Analyzing book found at {sys.argv[1]}")
     print("----------- Word Count ----------")
     print(f"Found {word_count} total words")
     print("-------- Character Count -------")
