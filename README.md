@@ -19,19 +19,12 @@ git clone https://github.com/TobiasAagaard/bookbot.git
 cd bookbot
 ```
 
-2. Create and activate a virtual environment (optional):
-```bash
-python3 -m venv venv
-source venv/bin/activate  # On Mac/Linux
-# Or on Windows: venv\Scripts\activate
-```
-
-3. Install the package:
+2. Install the package:
 ```bash
 pip install -e .
 ```
 
-4. Now use `bookbot` from anywhere:
+3. Now use `bookbot` from anywhere:
 ```bash
 bookbot books/frankenstein.txt
 ```
@@ -74,32 +67,6 @@ python3 main.py books/mobydick.txt
 pip uninstall bookbot
 ```
 
-## Project Structure
 
-```
-bookbot/
-├── main.py           # Main entry point and CLI handler
-├── stats.py          # Analysis functions
-├── setup.py          # Package installation configuration
-├── books/            # Sample books directory
-│   └── frankenstein.txt
-├── venv/             # Virtual environment (not committed to git)
-├── .gitignore        # Git ignore rules
-└── README.md
-```
 
-## Example Output
 
-```
-============ BOOKBOT ============
-Analyzing book found at books/your_book.txt
------------ Word Count ----------
-Found 75767 total words
--------- Character Count -------
-e: 44538
-t: 29493
-a: 25894
-o: 24494
-...
-============= END ===============
-```
